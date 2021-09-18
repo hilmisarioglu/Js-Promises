@@ -12,18 +12,44 @@
 //     );
 
 
-const isSuccessful = true;
-new Promise(function(resolve, reject) {
-    if(isSuccessful){
-        resolve("it continues");
-    }
-    reject("failed");
-})
-.then((resolve)=>{
-    console.log(resolve);
-    return "Task completed"
-})
-.then(console.log)
-.catch((reject)=>{
-    console.log(reject)
-})
+// const isSuccessful = false;
+// new Promise(function(resolve, reject) {
+//     if(isSuccessful){
+//         resolve("it continues");
+//     }
+//     reject("failed");
+// })
+// .then((resolve)=>{
+//     console.log(resolve);
+//     return "Task completed"
+// })
+// .then(console.log)
+// .catch((reject)=>{
+//     console.log(reject)
+// })
+
+
+// const myPromise = new Promise((resolve, reject)=>{
+
+//     if (false) {
+//         setTimeout(() => {
+//             resolve("I love you!")
+//         }, 2000);
+//     } else {
+//         setTimeout(() => {
+//             reject("I dont love you!")
+//         }, 2000);
+//     }
+
+// })
+
+// myPromise.then((resolve)=>{
+//     document.getElementById("promise").innerHTML=resolve;
+// })
+// .catch((reject)=>{
+//     document.getElementById("promise").innerHTML=reject;
+// })
+
+// fetch('http://example.com/movies.json')
+//   .then(response => response.json())
+//   .then(data => console.log(data));
